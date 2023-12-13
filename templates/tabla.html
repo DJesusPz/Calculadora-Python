@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla de Multiplicar:</h1>
+    <table>
+        <tr>
+            <th>Número</th>
+            <th>Factor</th>
+            <th>Resultado</th>
+        </tr>
+        {% for numero, factor, resultado in tabla %}
+            <tr>
+                <td>{{ numero }}</td>
+                <td>{{ factor }}</td>
+                <td>{{ resultado }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 3:</h1>
+    <form action="/ejercicio3" method="post">
+        <label for="radio">Ingrese el radio del círculo:</label>
+        <input type="number" name="radio" required>
+        <br>
+        <label for="lado_cuadrado">Ingrese el lado del cuadrado:</label>
+        <input type="number" name="lado_cuadrado" required>
+        <br>
+        <label for="base_triangulo">Ingrese la base del triángulo:</label>
+        <input type="number" name="base_triangulo" required>
+        <br>
+        <label for="altura_triangulo">Ingrese la altura del triángulo:</label>
+        <input type="number" name="altura_triangulo" required>
+        <br>
+        <button type="submit">Calcular Áreas</button>
+    </form>
+</body>
+</html>
